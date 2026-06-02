@@ -132,7 +132,7 @@ function CategoryPageContent() {
               className="fixed inset-0 bg-black/20 z-50 backdrop-blur-sm"
             />
             <motion.div 
-              initial={{ x: "-100%" }} animate={{ x: 0 }} exit={{ x: "-100%" }} transition={{ type: "tween", duration: 0.4, ease: [0.25, 1, 0.5, 1] }}
+              initial={{ x: "-100%" }} animate={{ x: 0 }} exit={{ x: "-100%" }} transition={{ type: "tween", duration: 0.4, ease: [0.25, 1, 0.5, 1] as any }}
               className="fixed top-0 left-0 h-full w-[85%] max-w-[400px] bg-white z-50 flex flex-col shadow-2xl"
             >
               <div className="flex items-center justify-between p-8">

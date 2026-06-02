@@ -37,7 +37,7 @@ export default function Home() {
 
   const itemVariant = {
     hidden: { opacity: 0, y: 20 },
-    show: { opacity: 1, y: 0, transition: { duration: 0.8, ease: [0.16, 1, 0.3, 1] } },
+    show: { opacity: 1, y: 0, transition: { duration: 0.8, ease: [0.16, 1, 0.3, 1] as any } },
   };
 
   return (
@@ -61,7 +61,7 @@ export default function Home() {
           <motion.div 
             initial={{ opacity: 0, y: 50 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 1.2, ease: [0.16, 1, 0.3, 1], delay: 0.2 }}
+            transition={{ duration: 1.2, ease: [0.16, 1, 0.3, 1] as any, delay: 0.2 }}
             className="space-y-8 max-w-5xl"
           >
             <h1 className="text-6xl md:text-8xl lg:text-9xl font-serif tracking-tighter leading-[0.85] text-transparent bg-clip-text bg-gradient-to-b from-white to-stone-400 font-light">
