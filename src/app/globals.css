@@ -1,0 +1,40 @@
+@import 'tailwindcss';
+
+@theme {
+  --font-sans: var(--font-inter);
+  --font-serif: var(--font-playfair);
+  
+  --color-stone-50: #fafaf9;
+  --color-stone-900: #1c1917;
+  --color-primary: #947156; /* Elegant soft gold/brown */
+  --color-secondary: #e6dfd8;
+  --color-accent: #2c3e50;
+}
+
+@layer base {
+  :root {
+    --background: #fafaf9;
+    --foreground: #1c1917;
+  }
+  
+  body {
+    background-color: var(--background);
+    color: var(--foreground);
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-serif);
+    font-weight: 500;
+    letter-spacing: -0.02em;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+nextjs-portal {
+  display: none !important;
+}
